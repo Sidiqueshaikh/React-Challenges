@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-06T13:31:35.681Z",
+  "lastUpdated": "2026-08-07T05:42:06.880Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 29.9,
-    "completionPercentage": 1.9,
+    "overallScore": 29,
+    "completionPercentage": 5.7,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 1
+    "completedChallenges": 3
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 90.7,
-      "completionPercentage": 4.3,
+      "averageScore": 87.8,
+      "completionPercentage": 13,
       "badgeLevel": "none",
       "totalChallenges": 23,
-      "completedChallenges": 1,
+      "completedChallenges": 3,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -25,6 +25,36 @@
           "passed": true,
           "score": 90.7,
           "lastRun": "2026-08-06T13:31:05.134Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "02-dynamic-task-rendering": {
+          "challengeId": "02-dynamic-task-rendering",
+          "challengeName": "Dynamic Task Rendering",
+          "passed": true,
+          "score": 81.95,
+          "lastRun": "2026-08-07T05:14:08.935Z",
+          "scores": {
+            "functionalTests": 75,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "03-adding-new-tasks": {
+          "challengeId": "03-adding-new-tasks",
+          "challengeName": "Adding New Tasks",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-07T05:41:36.631Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 50,
