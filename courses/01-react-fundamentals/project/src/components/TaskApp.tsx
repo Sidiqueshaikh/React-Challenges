@@ -28,25 +28,55 @@ export default function TaskApp({ tasks, setTasks, dispatch, showForm, countForm
   const [internalTasks, setInternalTasks] = useState<Task[]>(defaultTasks)
 
   const list = tasks ?? internalTasks
-  const countText = countFormat === 'tasks' ? `${list.length} Tasks` : `${list.length}`
+
+  const completedCount = list.filter((t) => t.completed).length
+  const countText =
+    countFormat === 'completed'
+      ? `${completedCount} of ${list.length} completed`
+      : countFormat === 'tasks'
+      ? `${list.length} Tasks`
+      : `${list.length}`
 
   const handleAddTask = (taskData: Record<string, unknown>) => {
-  const task = taskData as unknown as Task
+    const task = taskData as unknown as Task
 
-  if (dispatch) {
-    dispatch({ type: 'ADD_TASK', payload: task })
-  } else if (setTasks) {
-    setTasks((prev) => [...prev, task])
-  } else {
-    setInternalTasks((prev) => [...prev, task])
+    if (dispatch) {
+      dispatch({ type: 'ADD_TASK', payload: task })
+    } else if (setTasks) {
+      setTasks((prev) => [...prev, task])
+    } else {
+      setInternalTasks((prev) => [...prev, task])
+    }
   }
-}
+
+  const handleToggle = (id: string | number) => {
+    if (dispatch) {
+      dispatch({ type: 'TOGGLE_TASK', payload: id })
+    } else if (setTasks) {
+      setTasks((prev) =>
+        prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t))
+      )
+    } else {
+      setInternalTasks((prev) =>
+        prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t))
+      )
+    }
+  }
+
+  const handleDelete = (id: string | number) => {
+    if (dispatch) {
+      dispatch({ type: 'DELETE_TASK', payload: id })
+    } else if (setTasks) {
+      setTasks((prev) => prev.filter((t) => t.id !== id))
+    } else {
+      setInternalTasks((prev) => prev.filter((t) => t.id !== id))
+    }
+  }
 
   return (
     <div>
-      <p id="task-count">{countText}</p>
       {showForm && <TaskForm onAddTask={handleAddTask} />}
-      <TaskList tasks={list} countText={countText} />
+      <TaskList tasks={list} countText={countText} onToggle={handleToggle} onDelete={handleDelete} />
     </div>
   )
 }

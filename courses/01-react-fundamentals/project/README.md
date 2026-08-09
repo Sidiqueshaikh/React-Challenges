@@ -68,20 +68,20 @@ npm run review -- --challenge=01-static-task-display
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 7/8/2026, 11:12:02 am*
+*Auto-updated when you run review. Last run: 9/8/2026, 11:54:37 am*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 3 / 23 (13%) |
-| Average score | 87.8% |
+| Challenges completed | 5 / 23 (21.7%) |
+| Average score | 89% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
 | Static Task Display | JSX, Functional components, Props, Component composition, Semantic HTML | Passed |
 | Dynamic Task Rendering | useState, map(), key prop, Lists in JSX | Passed |
 | Adding New Tasks | Controlled inputs, Event handlers, Form validation, Form handling, Immutable state | Passed |
-| Task Completion Toggle | Updating array state, Event handlers with params, Conditional styling | — |
-| Task Deletion | filter, Immutable state, Confirmation patterns, Prop functions with arguments | — |
+| Task Completion Toggle | Updating array state, Event handlers with params, Conditional styling | Passed |
+| Task Deletion | filter, Immutable state, Confirmation patterns, Prop functions with arguments | Passed |
 | Task Filtering | Derived state, Conditional rendering, Filter logic composition | — |
 | Priority-Based Sorting | Array sort, Sort stability, Multiple sort criteria, Select dropdowns | — |
 | Task Editing | Inline editing, Conditional rendering, Edit mode state, Controlled inputs, Form handling, State synchronization | — |

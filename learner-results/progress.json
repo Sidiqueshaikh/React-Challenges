@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-07T05:42:06.880Z",
+  "lastUpdated": "2026-08-09T06:24:45.734Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 29,
-    "completionPercentage": 5.7,
+    "overallScore": 29.4,
+    "completionPercentage": 9.4,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 3
+    "completedChallenges": 5
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 87.8,
-      "completionPercentage": 13,
+      "averageScore": 89,
+      "completionPercentage": 21.7,
       "badgeLevel": "none",
       "totalChallenges": 23,
-      "completedChallenges": 3,
+      "completedChallenges": 5,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -55,6 +55,36 @@
           "passed": true,
           "score": 90.7,
           "lastRun": "2026-08-07T05:41:36.631Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "04-task-completion-toggle": {
+          "challengeId": "04-task-completion-toggle",
+          "challengeName": "Task Completion Toggle",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-09T06:10:26.081Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "05-task-deletion": {
+          "challengeId": "05-task-deletion",
+          "challengeName": "Task Deletion",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-09T06:23:44.336Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 50,

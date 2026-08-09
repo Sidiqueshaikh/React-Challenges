@@ -25,19 +25,26 @@ const HARDCODED_TASKS: Task[] = [
   { id: 3, title: 'Task Three', description: 'Third hardcoded task', priority: 'Low', completed: false },
 ]
 
-export default function TaskList({ tasks }: TaskListProps) {
+export default function TaskList({ tasks, countText, onToggle, onDelete }: TaskListProps) {
   const list = tasks ?? HARDCODED_TASKS
 
   return (
-    <section id="task-list">
-      {list.map((task) => (
-        <TaskCard
-          key={task.id}
-          title={task.title}
-          description={task.description}
-          priority={task.priority}
-        />
-      ))}
-    </section>
+    <>
+      {countText && <p id="task-count">{countText}</p>}
+      <section id="task-list">
+        {list.map((task) => (
+          <TaskCard
+            key={task.id}
+            taskId={task.id}
+            title={task.title}
+            description={task.description}
+            priority={task.priority}
+            completed={task.completed}
+            onToggle={onToggle}
+            onDelete={onDelete}
+          />
+        ))}
+      </section>
+    </>
   )
 }

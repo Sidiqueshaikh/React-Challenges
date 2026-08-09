@@ -55,3 +55,8 @@ a:hover {
   margin: 0.25rem 0;
   color: #333;
 }
+
+#task-card[data-completed="true"] {
+  background-color: #f0f0f0;
+  opacity: 0.75;
+}
