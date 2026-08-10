@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-09T06:24:45.734Z",
+  "lastUpdated": "2026-08-10T04:21:36.020Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 29.4,
-    "completionPercentage": 9.4,
+    "overallScore": 29.6,
+    "completionPercentage": 15.1,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 5
+    "completedChallenges": 8
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 89,
-      "completionPercentage": 21.7,
+      "averageScore": 89.6,
+      "completionPercentage": 34.8,
       "badgeLevel": "none",
       "totalChallenges": 23,
-      "completedChallenges": 5,
+      "completedChallenges": 8,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -85,6 +85,51 @@
           "passed": true,
           "score": 90.7,
           "lastRun": "2026-08-09T06:23:44.336Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "06-task-filtering": {
+          "challengeId": "06-task-filtering",
+          "challengeName": "Task Filtering",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-10T03:54:30.750Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "07-priority-based-sorting": {
+          "challengeId": "07-priority-based-sorting",
+          "challengeName": "Priority-Based Sorting",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-10T04:06:16.791Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "08-task-editing": {
+          "challengeId": "08-task-editing",
+          "challengeName": "Task Editing",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-10T04:21:07.012Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 50,

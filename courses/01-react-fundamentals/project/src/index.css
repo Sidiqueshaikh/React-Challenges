@@ -60,3 +60,14 @@ a:hover {
   background-color: #f0f0f0;
   opacity: 0.75;
 }
+
+#filter-bar button[data-active="true"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
