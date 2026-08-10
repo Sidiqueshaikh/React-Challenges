@@ -1,11 +1,11 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-08-10T04:21:33.592Z",
+  "lastUpdated": "2026-08-10T15:39:24.984Z",
   "totalChallenges": 23,
-  "completedChallenges": 8,
-  "averageScore": 89.6,
-  "completionPercentage": 34.8,
+  "completedChallenges": 10,
+  "averageScore": 88.4,
+  "completionPercentage": 43.5,
   "badgeLevel": "none",
   "challengeResults": [
     {
@@ -55,6 +55,18 @@
       "challengeName": "Task Editing",
       "score": 90.7,
       "passed": true
+    },
+    {
+      "challengeId": "09-search-functionality",
+      "challengeName": "Search Functionality",
+      "score": 82.45,
+      "passed": true
+    },
+    {
+      "challengeId": "10-useeffect-local-storage",
+      "challengeName": "useEffect - Local Storage Persistence",
+      "score": 84.95,
+      "passed": true
     }
   ],
   "skillStrengths": [
@@ -65,7 +77,9 @@
     "Task Deletion",
     "Task Filtering",
     "Priority-Based Sorting",
-    "Task Editing"
+    "Task Editing",
+    "Search Functionality",
+    "useEffect - Local Storage Persistence"
   ],
   "improvementAreas": []
 }

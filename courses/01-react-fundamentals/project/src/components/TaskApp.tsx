@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Dispatch, SetStateAction } from 'react'
 import TaskList from './TaskList'
 import TaskForm from './TaskForm'
@@ -29,6 +29,7 @@ const defaultTasks: Task[] = [
 ]
 
 const PRIORITY_RANK: Record<string, number> = { High: 3, Medium: 2, Low: 1 }
+const STORAGE_KEY = 'task-app-tasks'
 
 export default function TaskApp({
   tasks,
@@ -42,9 +43,38 @@ export default function TaskApp({
   const [filter, setFilter] = useState<FilterValue>('all')
   const [sortOrder, setSortOrder] = useState<SortValue>('recent')
   const [editingId, setEditingId] = useState<string | number | null>(null)
+  const [searchText, setSearchText] = useState('')
+
+  // Load persisted tasks on mount (only when TaskApp owns its own state)
+  useEffect(() => {
+    if (tasks) return
+
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY)
+      if (stored) {
+        const parsed = JSON.parse(stored)
+        if (Array.isArray(parsed)) {
+          setInternalTasks(parsed as Task[])
+        }
+      }
+    } catch {
+      // Invalid or missing data - keep default tasks
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const list = tasks ?? internalTasks
 
+  // Save tasks whenever they change
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
+    } catch {
+      // Storage unavailable or full - ignore
+    }
+  }, [list])
+
+  // 1. Filter by status
   const filteredList =
     filter === 'active'
       ? list.filter((t) => !t.completed)
@@ -52,7 +82,19 @@ export default function TaskApp({
       ? list.filter((t) => t.completed)
       : list
 
-  const sortedList = [...filteredList].sort((a, b) => {
+  // 2. Filter by search
+  const searchedList = searchText.trim()
+    ? filteredList.filter((t) => {
+        const query = searchText.trim().toLowerCase()
+        return (
+          t.title.toLowerCase().includes(query) ||
+          t.description.toLowerCase().includes(query)
+        )
+      })
+    : filteredList
+
+  // 3. Sort
+  const sortedList = [...searchedList].sort((a, b) => {
     if (sortOrder === 'priority-high') {
       return (PRIORITY_RANK[b.priority] ?? 0) - (PRIORITY_RANK[a.priority] ?? 0)
     }
@@ -74,6 +116,10 @@ export default function TaskApp({
       : countFormat === 'tasks'
       ? `${list.length} Tasks`
       : `${list.length}`
+
+  const emptyMessage = searchText.trim()
+    ? `No tasks found for "${searchText.trim()}"`
+    : 'No tasks match this filter'
 
   const handleAddTask = (taskData: Record<string, unknown>) => {
     const task = taskData as unknown as Task
@@ -146,10 +192,12 @@ export default function TaskApp({
           onFilterChange={setFilter}
           sortOrder={sortOrder}
           onSortChange={setSortOrder}
+          searchText={searchText}
+          onSearchChange={setSearchText}
         />
       )}
       {showFilterBar && sortedList.length === 0 && (
-        <p id="filter-empty-message">No tasks match this filter</p>
+        <p id="filter-empty-message">{emptyMessage}</p>
       )}
       <TaskList
         tasks={sortedList}

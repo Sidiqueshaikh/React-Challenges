@@ -6,6 +6,8 @@ interface FilterBarProps {
   onFilterChange: (filter: FilterValue) => void
   sortOrder?: SortValue
   onSortChange?: (sort: SortValue) => void
+  searchText?: string
+  onSearchChange?: (text: string) => void
 }
 
 export default function FilterBar({
@@ -13,6 +15,8 @@ export default function FilterBar({
   onFilterChange,
   sortOrder,
   onSortChange,
+  searchText,
+  onSearchChange,
 }: FilterBarProps) {
   const filters: FilterValue[] = ['all', 'active', 'completed']
 
@@ -40,6 +44,23 @@ export default function FilterBar({
           <option value="priority-low">Priority: Low to High</option>
           <option value="alphabetical">Alphabetical</option>
         </select>
+      )}
+
+      {onSearchChange && (
+        <>
+          <input
+            id="search-input"
+            type="text"
+            value={searchText ?? ''}
+            onChange={(e) => onSearchChange(e.target.value)}
+            placeholder="Search tasks..."
+          />
+          {searchText && searchText.length > 0 && (
+            <button id="clear-search" type="button" onClick={() => onSearchChange('')}>
+              Clear search
+            </button>
+          )}
+        </>
       )}
     </div>
   )
