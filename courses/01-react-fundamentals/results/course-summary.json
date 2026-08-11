@@ -1,12 +1,12 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-08-10T15:39:24.984Z",
+  "lastUpdated": "2026-08-11T14:59:18.421Z",
   "totalChallenges": 23,
-  "completedChallenges": 10,
-  "averageScore": 88.4,
-  "completionPercentage": 43.5,
-  "badgeLevel": "none",
+  "completedChallenges": 19,
+  "averageScore": 89.2,
+  "completionPercentage": 82.6,
+  "badgeLevel": "silver",
   "challengeResults": [
     {
       "challengeId": "01-static-task-display",
@@ -67,6 +67,60 @@
       "challengeName": "useEffect - Local Storage Persistence",
       "score": 84.95,
       "passed": true
+    },
+    {
+      "challengeId": "11-useeffect-debounced-search",
+      "challengeName": "useEffect - Debounced Search",
+      "score": 90.7,
+      "passed": true
+    },
+    {
+      "challengeId": "12-categories-and-tags",
+      "challengeName": "Categories and Tags",
+      "score": 90.7,
+      "passed": true
+    },
+    {
+      "challengeId": "13-due-dates-and-sorting",
+      "challengeName": "Due Dates and Sorting",
+      "score": 89.95,
+      "passed": true
+    },
+    {
+      "challengeId": "14-task-statistics-dashboard",
+      "challengeName": "Task Statistics Dashboard",
+      "score": 90.7,
+      "passed": true
+    },
+    {
+      "challengeId": "15-component-organization",
+      "challengeName": "Component Organization with Props",
+      "score": 91.6,
+      "passed": true
+    },
+    {
+      "challengeId": "16-context-api-theme",
+      "challengeName": "Context API - Theme Management",
+      "score": 90.7,
+      "passed": true
+    },
+    {
+      "challengeId": "17-custom-hook-uselocalstorage",
+      "challengeName": "Custom Hook - useLocalStorage",
+      "score": 90.7,
+      "passed": true
+    },
+    {
+      "challengeId": "18-usereducer-complex-state",
+      "challengeName": "useReducer - Complex State Management",
+      "score": 90.7,
+      "passed": true
+    },
+    {
+      "challengeId": "19-performance-optimization",
+      "challengeName": "Performance Optimization",
+      "score": 85,
+      "passed": true
     }
   ],
   "skillStrengths": [
@@ -79,7 +133,16 @@
     "Priority-Based Sorting",
     "Task Editing",
     "Search Functionality",
-    "useEffect - Local Storage Persistence"
+    "useEffect - Local Storage Persistence",
+    "useEffect - Debounced Search",
+    "Categories and Tags",
+    "Due Dates and Sorting",
+    "Task Statistics Dashboard",
+    "Component Organization with Props",
+    "Context API - Theme Management",
+    "Custom Hook - useLocalStorage",
+    "useReducer - Complex State Management",
+    "Performance Optimization"
   ],
   "improvementAreas": []
 }

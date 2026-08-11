@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-10T15:39:28.927Z",
+  "lastUpdated": "2026-08-11T14:59:20.676Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 29.2,
-    "completionPercentage": 18.9,
+    "overallScore": 29.4,
+    "completionPercentage": 35.8,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 10
+    "completedChallenges": 19
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 88.4,
-      "completionPercentage": 43.5,
-      "badgeLevel": "none",
+      "averageScore": 89.2,
+      "completionPercentage": 82.6,
+      "badgeLevel": "silver",
       "totalChallenges": 23,
-      "completedChallenges": 10,
+      "completedChallenges": 19,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -167,6 +167,141 @@
             "bestPractices": 100,
             "e2eTests": 100,
             "aiReview": 83
+          }
+        },
+        "11-useeffect-debounced-search": {
+          "challengeId": "11-useeffect-debounced-search",
+          "challengeName": "useEffect - Debounced Search",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-11T04:39:29.162Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "12-categories-and-tags": {
+          "challengeId": "12-categories-and-tags",
+          "challengeName": "Categories and Tags",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-11T04:48:39.196Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "13-due-dates-and-sorting": {
+          "challengeId": "13-due-dates-and-sorting",
+          "challengeName": "Due Dates and Sorting",
+          "passed": true,
+          "score": 89.95,
+          "lastRun": "2026-08-11T04:56:06.500Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 83
+          }
+        },
+        "14-task-statistics-dashboard": {
+          "challengeId": "14-task-statistics-dashboard",
+          "challengeName": "Task Statistics Dashboard",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-11T06:07:41.379Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "15-component-organization": {
+          "challengeId": "15-component-organization",
+          "challengeName": "Component Organization with Props",
+          "passed": true,
+          "score": 91.6,
+          "lastRun": "2026-08-11T06:31:25.806Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 94
+          }
+        },
+        "16-context-api-theme": {
+          "challengeId": "16-context-api-theme",
+          "challengeName": "Context API - Theme Management",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-11T06:58:10.267Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "17-custom-hook-uselocalstorage": {
+          "challengeId": "17-custom-hook-uselocalstorage",
+          "challengeName": "Custom Hook - useLocalStorage",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-11T09:44:21.902Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "18-usereducer-complex-state": {
+          "challengeId": "18-usereducer-complex-state",
+          "challengeName": "useReducer - Complex State Management",
+          "passed": true,
+          "score": 90.7,
+          "lastRun": "2026-08-11T09:56:28.157Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "19-performance-optimization": {
+          "challengeId": "19-performance-optimization",
+          "challengeName": "Performance Optimization",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-11T14:59:01.934Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
           }
         }
       }

@@ -3262,5 +3262,2022 @@
       "maintainability": 80,
       "overall": "The code is well-structured and well-implemented, but there are a few areas that can be improved for better maintainability and readability."
     }
+  },
+  {
+    "challengeId": "11-useeffect-debounced-search",
+    "challengeName": "useEffect - Debounced Search",
+    "timestamp": "2026-08-11T04:39:29.162Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 90.7,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search FilterBar should exist for search/debounce integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search/debounce integration",
+              "duration": 17,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 8,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786423174204,
+          "endTime": 1786423174229,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/FilterBar.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useEffect"
+          ]
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useEffect"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-11.spec.ts",
+          "file": "challenge-11.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 11: useEffect Debounced Search - E2E",
+              "file": "challenge-11.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2009,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T04:39:46.898Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1017095ef2170c8a8deb-e3db42bbbc868bb5cc60",
+                  "file": "challenge-11.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "11-useeffect-debounced-search",
+      "timestamp": "2026-08-11T04:39:51.196Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of TypeScript and React hooks",
+        "Clear separation of concerns between components and props",
+        "Well-structured and organized code with clear naming conventions"
+      ],
+      "improvements": [
+        "Consider using a more robust debounce library or function to handle edge cases",
+        "Some of the code could benefit from additional comments or explanations for complex logic",
+        "The `useEffect` cleanup function could be improved to handle cases where the component is unmounted before the timeout is cleared"
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and performance. However, there are some areas where the code could be improved to make it more robust and efficient."
+    },
+    "aiResults": {
+      "challengeId": "11-useeffect-debounced-search",
+      "timestamp": "2026-08-11T04:39:51.196Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of TypeScript and React hooks",
+        "Clear separation of concerns between components and props",
+        "Well-structured and organized code with clear naming conventions"
+      ],
+      "improvements": [
+        "Consider using a more robust debounce library or function to handle edge cases",
+        "Some of the code could benefit from additional comments or explanations for complex logic",
+        "The `useEffect` cleanup function could be improved to handle cases where the component is unmounted before the timeout is cleared"
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and performance. However, there are some areas where the code could be improved to make it more robust and efficient."
+    }
+  },
+  {
+    "challengeId": "12-categories-and-tags",
+    "challengeName": "Categories and Tags",
+    "timestamp": "2026-08-11T04:48:39.196Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 90.7,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskCard should render title and priority",
+              "status": "passed",
+              "title": "TaskCard should render title and priority",
+              "duration": 26,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskList should render tasks with extended shape",
+              "status": "passed",
+              "title": "TaskList should render tasks with extended shape",
+              "duration": 5,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786423722652,
+          "endTime": 1786423722683,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-12.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "props"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/TaskCard.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskForm.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/FilterBar.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskList.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-12.spec.ts",
+          "file": "challenge-12.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 12: Categories and Tags - E2E",
+              "file": "challenge-12.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1945,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T04:48:51.622Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f77a26b762255a776dfc-1e72282d7e9ad6aacbad",
+                  "file": "challenge-12.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "should display task form",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 318,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T04:48:54.798Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f77a26b762255a776dfc-13a870c03fe903ce223c",
+                  "file": "challenge-12.spec.ts",
+                  "line": 12,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "12-categories-and-tags",
+      "timestamp": "2026-08-11T04:48:56.524Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components makes the code maintainable and efficient.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "Some of the functions are quite long and could be broken down into smaller, more manageable functions.",
+        "The code could benefit from more type checking and error handling.",
+        "The use of hardcoded tasks in the TaskList component could be replaced with a more dynamic approach."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but could benefit from some improvements in terms of readability and error handling. With some refactoring and additional type checking, this code has the potential to be even more efficient and scalable."
+    },
+    "aiResults": {
+      "challengeId": "12-categories-and-tags",
+      "timestamp": "2026-08-11T04:48:56.524Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components makes the code maintainable and efficient.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "Some of the functions are quite long and could be broken down into smaller, more manageable functions.",
+        "The code could benefit from more type checking and error handling.",
+        "The use of hardcoded tasks in the TaskList component could be replaced with a more dynamic approach."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but could benefit from some improvements in terms of readability and error handling. With some refactoring and additional type checking, this code has the potential to be even more efficient and scalable."
+    }
+  },
+  {
+    "challengeId": "13-due-dates-and-sorting",
+    "challengeName": "Due Dates and Sorting",
+    "timestamp": "2026-08-11T04:56:06.500Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 83
+    },
+    "totalScore": 89.95,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskCard should render title",
+              "status": "passed",
+              "title": "TaskCard should render title",
+              "duration": 23,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 4,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786424169889,
+          "endTime": 1786424169916,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-13.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "props"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/TaskCard.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskForm.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-13.spec.ts",
+          "file": "challenge-13.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 13: Due Dates and Sorting - E2E",
+              "file": "challenge-13.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1805,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T04:56:20.519Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b108b4dbebb7686e0d0c-86864a67f0db9b54973f",
+                  "file": "challenge-13.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "13-due-dates-and-sorting",
+      "timestamp": "2026-08-11T04:56:25.122Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent structure.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code includes helpful comments and explanations."
+      ],
+      "improvements": [
+        "Some function names could be more descriptive, such as `getDueDateStatus`.",
+        "The `withDefaults` function could be extracted into a separate file or module.",
+        "The `PRIORITY_RANK` object could be replaced with a more robust data structure, such as an enum or a separate file."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "13-due-dates-and-sorting",
+      "timestamp": "2026-08-11T04:56:25.122Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent structure.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code includes helpful comments and explanations."
+      ],
+      "improvements": [
+        "Some function names could be more descriptive, such as `getDueDateStatus`.",
+        "The `withDefaults` function could be extracted into a separate file or module.",
+        "The `PRIORITY_RANK` object could be replaced with a more robust data structure, such as an enum or a separate file."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "14-task-statistics-dashboard",
+    "challengeName": "Task Statistics Dashboard",
+    "timestamp": "2026-08-11T06:07:41.379Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 90.7,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should have id=\"stats-panel\"",
+              "status": "passed",
+              "title": "StatsPanel should have id=\"stats-panel\"",
+              "duration": 23,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should display total and completed",
+              "status": "passed",
+              "title": "StatsPanel should display total and completed",
+              "duration": 10,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 6,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786428465559,
+          "endTime": 1786428465598,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-14.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useMemo",
+        "props"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/StatsPanel.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": [
+            "useMemo"
+          ]
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useMemo",
+            "props"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-14.spec.ts",
+          "file": "challenge-14.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 14: Task Statistics Dashboard - E2E",
+              "file": "challenge-14.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1853,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T06:07:56.035Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "be2334d46d68155f57f3-364480833597fd92a242",
+                  "file": "challenge-14.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "should display stats panel when implemented",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 309,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T06:07:58.789Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "be2334d46d68155f57f3-3e6d44d38890e704d251",
+                  "file": "challenge-14.spec.ts",
+                  "line": 12,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "14-task-statistics-dashboard",
+      "timestamp": "2026-08-11T06:08:01.095Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of React hooks, including `useMemo` for memoizing statistics.",
+        "Clear separation of concerns between components, with `TaskApp` handling state and logic.",
+        "Well-structured code with clear variable names and concise functions."
+      ],
+      "improvements": [
+        "Consider adding type annotations for the `stats` object in `useMemo` to improve code readability and maintainability.",
+        "In `TaskApp`, the `useEffect` hook for debouncing search text could be refactored to use a more functional approach, such as using `useCallback` to memoize the debounced function.",
+        "In `StatsPanel`, the progress bar could be made more accessible by adding an `aria-label` attribute to describe the purpose of the progress bar."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and effectively uses React hooks. However, there are some minor improvements that can be made to enhance readability and accessibility."
+    },
+    "aiResults": {
+      "challengeId": "14-task-statistics-dashboard",
+      "timestamp": "2026-08-11T06:08:01.095Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of React hooks, including `useMemo` for memoizing statistics.",
+        "Clear separation of concerns between components, with `TaskApp` handling state and logic.",
+        "Well-structured code with clear variable names and concise functions."
+      ],
+      "improvements": [
+        "Consider adding type annotations for the `stats` object in `useMemo` to improve code readability and maintainability.",
+        "In `TaskApp`, the `useEffect` hook for debouncing search text could be refactored to use a more functional approach, such as using `useCallback` to memoize the debounced function.",
+        "In `StatsPanel`, the progress bar could be made more accessible by adding an `aria-label` attribute to describe the purpose of the progress bar."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and effectively uses React hooks. However, there are some minor improvements that can be made to enhance readability and accessibility."
+    }
+  },
+  {
+    "challengeId": "15-component-organization",
+    "challengeName": "Component Organization with Props",
+    "timestamp": "2026-08-11T06:31:25.806Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 94
+    },
+    "totalScore": 91.6,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskCard should accept and render props",
+              "status": "passed",
+              "title": "TaskCard should accept and render props",
+              "duration": 23,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskList should render TaskCards with props",
+              "status": "passed",
+              "title": "TaskList should render TaskCards with props",
+              "duration": 5,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786429890477,
+          "endTime": 1786429890505,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-15.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "props"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/Button.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/Badge.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/StatusIndicator.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/FormInput.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-15.spec.ts",
+          "file": "challenge-15.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 15: Component Organization - E2E",
+              "file": "challenge-15.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1855,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T06:31:41.720Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a220d5623351847681d1-e80f7889496da537a60a",
+                  "file": "challenge-15.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "15-component-organization",
+      "timestamp": "2026-08-11T06:31:46.379Z",
+      "score": 94,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized, and each component has a clear purpose.",
+        "The use of TypeScript interfaces and destructuring props improves code readability and maintainability.",
+        "The components are well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "In the `Badge` component, consider adding a default value for the `variant` prop to avoid potential issues when it's not provided.",
+        "In the `StatusIndicator` component, consider adding a check for the `label` prop to ensure it's not `undefined` before using it.",
+        "Consider adding more type checking for the `FormInput` component, such as checking the type of the `onChange` event."
+      ],
+      "readability": 92,
+      "maintainability": 95,
+      "overall": "The code is well-structured, maintainable, and follows best practices. The use of reusable components and TypeScript interfaces improves the overall quality of the code. With a few minor improvements, this code is ready for production."
+    },
+    "aiResults": {
+      "challengeId": "15-component-organization",
+      "timestamp": "2026-08-11T06:31:46.379Z",
+      "score": 94,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized, and each component has a clear purpose.",
+        "The use of TypeScript interfaces and destructuring props improves code readability and maintainability.",
+        "The components are well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "In the `Badge` component, consider adding a default value for the `variant` prop to avoid potential issues when it's not provided.",
+        "In the `StatusIndicator` component, consider adding a check for the `label` prop to ensure it's not `undefined` before using it.",
+        "Consider adding more type checking for the `FormInput` component, such as checking the type of the `onChange` event."
+      ],
+      "readability": 92,
+      "maintainability": 95,
+      "overall": "The code is well-structured, maintainable, and follows best practices. The use of reusable components and TypeScript interfaces improves the overall quality of the code. With a few minor improvements, this code is ready for production."
+    }
+  },
+  {
+    "challengeId": "16-context-api-theme",
+    "challengeName": "Context API - Theme Management",
+    "timestamp": "2026-08-11T06:58:10.267Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 90.7,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 55,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should have main content",
+              "status": "passed",
+              "title": "App should have main content",
+              "duration": 12,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786431496421,
+          "endTime": 1786431496488,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-16.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "createContext",
+        "useContext"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/contexts/ThemeContext.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "createContext",
+            "useContext"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "createContext",
+            "useContext"
+          ]
+        },
+        {
+          "file": "src/components/ChallengeList.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useContext"
+          ],
+          "patternsMissing": [
+            "createContext"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-16.spec.ts",
+          "file": "challenge-16.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 16: Context API Theme - E2E",
+              "file": "challenge-16.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2475,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T06:58:30.359Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3923c1b5135bbbcbba41-0360f6d5a5fe9777b6cf",
+                  "file": "challenge-16.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "16-context-api-theme",
+      "timestamp": "2026-08-11T06:58:38.761Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript is a good practice for a large-scale application.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "The `ThemeProvider` component has a lot of responsibilities. It would be better to break it down into smaller components, each with a single responsibility.",
+        "The `useTheme` hook can be improved by adding a default value to the `ctx` variable to avoid the `Error` thrown when the context is not provided.",
+        "The `ChallengeList` component can be improved by using a more efficient way to render the list of challenges, such as using a `map` function with a key function to avoid unnecessary re-renders."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices, but there are some areas that can be improved for better maintainability and performance."
+    },
+    "aiResults": {
+      "challengeId": "16-context-api-theme",
+      "timestamp": "2026-08-11T06:58:38.761Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript is a good practice for a large-scale application.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "The `ThemeProvider` component has a lot of responsibilities. It would be better to break it down into smaller components, each with a single responsibility.",
+        "The `useTheme` hook can be improved by adding a default value to the `ctx` variable to avoid the `Error` thrown when the context is not provided.",
+        "The `ChallengeList` component can be improved by using a more efficient way to render the list of challenges, such as using a `map` function with a key function to avoid unnecessary re-renders."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices, but there are some areas that can be improved for better maintainability and performance."
+    }
+  },
+  {
+    "challengeId": "17-custom-hook-uselocalstorage",
+    "challengeName": "Custom Hook - useLocalStorage",
+    "timestamp": "2026-08-11T09:44:21.902Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 90.7,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 17: Custom Hook - useLocalStorage"
+              ],
+              "fullName": " Challenge 17: Custom Hook - useLocalStorage App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 62,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786441467076,
+          "endTime": 1786441467138,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-17.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "customHook"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/hooks/useLocalStorage.ts",
+          "patternsFound": [],
+          "patternsMissing": [
+            "functionalComponent",
+            "customHook"
+          ]
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "customHook"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/contexts/ThemeContext.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "customHook"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-17.spec.ts",
+          "file": "challenge-17.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 17: Custom Hook useLocalStorage - E2E",
+              "file": "challenge-17.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2194,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T09:44:36.660Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "10801a4643fac957b65b-21592ac323f744497a60",
+                  "file": "challenge-17.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "17-custom-hook-uselocalstorage",
+      "timestamp": "2026-08-11T09:44:42.451Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The useLocalStorage hook is well-structured and easy to understand, with clear and concise variable names.",
+        "The hook handles errors and edge cases effectively, providing a robust solution for local storage management.",
+        "The code is well-organized and follows a consistent naming convention, making it easy to navigate and understand."
+      ],
+      "improvements": [
+        "Consider adding JSDoc comments to the useLocalStorage hook to provide a clear description of its purpose, parameters, and return values.",
+        "In the ThemeContext, consider adding a check to ensure that the theme value is one of the expected values ('light' or 'dark') to prevent unexpected behavior.",
+        "In the App.tsx file, consider extracting the routes configuration into a separate file to improve code organization and reusability."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and effectively implements the useLocalStorage hook. With a few minor improvements, it can be even more robust and efficient."
+    },
+    "aiResults": {
+      "challengeId": "17-custom-hook-uselocalstorage",
+      "timestamp": "2026-08-11T09:44:42.451Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The useLocalStorage hook is well-structured and easy to understand, with clear and concise variable names.",
+        "The hook handles errors and edge cases effectively, providing a robust solution for local storage management.",
+        "The code is well-organized and follows a consistent naming convention, making it easy to navigate and understand."
+      ],
+      "improvements": [
+        "Consider adding JSDoc comments to the useLocalStorage hook to provide a clear description of its purpose, parameters, and return values.",
+        "In the ThemeContext, consider adding a check to ensure that the theme value is one of the expected values ('light' or 'dark') to prevent unexpected behavior.",
+        "In the App.tsx file, consider extracting the routes configuration into a separate file to improve code organization and reusability."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and effectively implements the useLocalStorage hook. With a few minor improvements, it can be even more robust and efficient."
+    }
+  },
+  {
+    "challengeId": "18-usereducer-complex-state",
+    "challengeName": "useReducer - Complex State Management",
+    "timestamp": "2026-08-11T09:56:28.157Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 90.7,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management App should render",
+              "status": "passed",
+              "title": "App should render",
+              "duration": 54,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 6,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786442192066,
+          "endTime": 1786442192126,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-18.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useReducer"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useReducer"
+          ]
+        },
+        {
+          "file": "src/reducers/taskReducer.ts",
+          "patternsFound": [],
+          "patternsMissing": [
+            "functionalComponent",
+            "useReducer"
+          ]
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useReducer"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-18.spec.ts",
+          "file": "challenge-18.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 18: useReducer - E2E",
+              "file": "challenge-18.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2088,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T09:56:42.211Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "50842316024f411078d2-dce201608bcba5c43bc9",
+                  "file": "challenge-18.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "18-usereducer-complex-state",
+      "timestamp": "2026-08-11T09:56:46.845Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of TypeScript type annotations and interfaces",
+        "Clear separation of concerns between task management logic and UI components",
+        "Use of a reducer function for complex state management"
+      ],
+      "improvements": [
+        "Consider using a more robust state management solution, such as Redux, for large-scale applications",
+        "Some function names, such as `withDefaults`, could be more descriptive",
+        "The `useEffect` hook is used extensively; consider breaking down complex effects into smaller, more manageable pieces"
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code demonstrates a good understanding of React, TypeScript, and state management principles. However, there are opportunities to improve maintainability and scalability by addressing the areas for improvement mentioned above."
+    },
+    "aiResults": {
+      "challengeId": "18-usereducer-complex-state",
+      "timestamp": "2026-08-11T09:56:46.845Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "Effective use of TypeScript type annotations and interfaces",
+        "Clear separation of concerns between task management logic and UI components",
+        "Use of a reducer function for complex state management"
+      ],
+      "improvements": [
+        "Consider using a more robust state management solution, such as Redux, for large-scale applications",
+        "Some function names, such as `withDefaults`, could be more descriptive",
+        "The `useEffect` hook is used extensively; consider breaking down complex effects into smaller, more manageable pieces"
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code demonstrates a good understanding of React, TypeScript, and state management principles. However, there are opportunities to improve maintainability and scalability by addressing the areas for improvement mentioned above."
+    }
+  },
+  {
+    "challengeId": "19-performance-optimization",
+    "challengeName": "Performance Optimization",
+    "timestamp": "2026-08-11T14:59:01.934Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 0
+    },
+    "totalScore": 85,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskCard should render",
+              "status": "passed",
+              "title": "TaskCard should render",
+              "duration": 21,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskList should render TaskCards",
+              "status": "passed",
+              "title": "TaskList should render TaskCards",
+              "duration": 6,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786460345291,
+          "endTime": 1786460345318,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-19.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\App.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskApp.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskCard.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskList.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "React.memo",
+        "useCallback",
+        "useMemo"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/TaskCard.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "React.memo"
+          ],
+          "patternsMissing": [
+            "useCallback",
+            "useMemo"
+          ]
+        },
+        {
+          "file": "src/components/TaskList.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "React.memo",
+            "useCallback",
+            "useMemo"
+          ]
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useCallback",
+            "useMemo"
+          ],
+          "patternsMissing": [
+            "React.memo"
+          ]
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "React.memo",
+            "useCallback",
+            "useMemo"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-19.spec.ts",
+          "file": "challenge-19.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 19: Performance Optimization - E2E",
+              "file": "challenge-19.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1850,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-11T14:59:14.486Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "9d252b4519b361f881b0-9c8b6915a27106834fce",
+                  "file": "challenge-19.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "19-performance-optimization",
+      "timestamp": "2026-08-11T14:59:18.222Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01kz6fva32edgb8vxntrfth32j` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6049, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    },
+    "aiResults": {
+      "challengeId": "19-performance-optimization",
+      "timestamp": "2026-08-11T14:59:18.222Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01kz6fva32edgb8vxntrfth32j` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6049, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
   }
 ]

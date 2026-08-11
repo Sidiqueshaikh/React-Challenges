@@ -1,5 +1,8 @@
+import Button from './Button'
+import FormInput from './FormInput'
+
 type FilterValue = 'all' | 'active' | 'completed'
-type SortValue = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical'
+type SortValue = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 'due-date'
 
 interface FilterBarProps {
   filter: FilterValue
@@ -8,6 +11,10 @@ interface FilterBarProps {
   onSortChange?: (sort: SortValue) => void
   searchText?: string
   onSearchChange?: (text: string) => void
+  isSearching?: boolean
+  categoryFilter?: string
+  onCategoryFilterChange?: (category: string) => void
+  categories?: string[]
 }
 
 export default function FilterBar({
@@ -17,20 +24,24 @@ export default function FilterBar({
   onSortChange,
   searchText,
   onSearchChange,
+  isSearching,
+  categoryFilter,
+  onCategoryFilterChange,
+  categories,
 }: FilterBarProps) {
   const filters: FilterValue[] = ['all', 'active', 'completed']
 
   return (
     <div id="filter-bar">
       {filters.map((f) => (
-        <button
+        <Button
           key={f}
-          type="button"
-          data-active={filter === f}
+          variant="secondary"
+          active={filter === f}
           onClick={() => onFilterChange(f)}
         >
           {f.charAt(0).toUpperCase() + f.slice(1)}
-        </button>
+        </Button>
       ))}
 
       {onSortChange && (
@@ -43,23 +54,39 @@ export default function FilterBar({
           <option value="priority-high">Priority: High to Low</option>
           <option value="priority-low">Priority: Low to High</option>
           <option value="alphabetical">Alphabetical</option>
+          <option value="due-date">Due Date (Soonest First)</option>
+        </select>
+      )}
+
+      {onCategoryFilterChange && (
+        <select
+          id="category-filter"
+          value={categoryFilter ?? 'all'}
+          onChange={(e) => onCategoryFilterChange(e.target.value)}
+        >
+          <option value="all">All categories</option>
+          {(categories ?? []).map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
         </select>
       )}
 
       {onSearchChange && (
         <>
-          <input
+          <FormInput
             id="search-input"
-            type="text"
             value={searchText ?? ''}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search tasks..."
+            type="text"
           />
           {searchText && searchText.length > 0 && (
-            <button id="clear-search" type="button" onClick={() => onSearchChange('')}>
+            <Button id="clear-search" variant="secondary" onClick={() => onSearchChange('')}>
               Clear search
-            </button>
+            </Button>
           )}
+          {isSearching && <p id="searching-indicator">Searching...</p>}
         </>
       )}
     </div>

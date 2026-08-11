@@ -15,4 +15,12 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['tests/**/*.{ts,tsx}'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
+      },
+    },
+  ],
 }
