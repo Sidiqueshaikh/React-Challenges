@@ -5,6 +5,7 @@ import TaskForm from './TaskForm'
 import FilterBar from './FilterBar'
 import StatsPanel from './StatsPanel'
 import ThemeToggle from './ThemeToggle'
+import ErrorBoundary from './ErrorBoundary'
 import { ThemeProvider } from '../contexts/ThemeContext'
 import { taskReducer, ADD_TASK, TOGGLE_TASK, DELETE_TASK, UPDATE_TASK } from '../reducers/taskReducer'
 import type { Task } from './TaskList'
@@ -67,6 +68,7 @@ export default function TaskApp({
   countFormat,
   showFilterBar,
   showStatsPanel,
+  linkToTaskDetail,
 }: TaskAppProps) {
   const [internalTasks, internalDispatch] = useReducer(taskReducer, undefined, loadPersistedTasks)
   const [filter, setFilter] = useState<FilterValue>('all')
@@ -279,16 +281,19 @@ export default function TaskApp({
         {showFilterBar && sortedList.length === 0 && (
           <p id="filter-empty-message">{emptyMessage}</p>
         )}
-        <TaskList
-          tasks={sortedList}
-          countText={countText}
-          onToggle={handleToggle}
-          onDelete={handleDelete}
-          onUpdateTask={handleUpdateTask}
-          editingId={editingId}
-          onEditStart={handleEditStart}
-          onEditCancel={handleEditCancel}
-        />
+        <ErrorBoundary>
+          <TaskList
+            tasks={sortedList}
+            countText={countText}
+            onToggle={handleToggle}
+            onDelete={handleDelete}
+            onUpdateTask={handleUpdateTask}
+            editingId={editingId}
+            onEditStart={handleEditStart}
+            onEditCancel={handleEditCancel}
+            linkToTaskDetail={linkToTaskDetail}
+          />
+        </ErrorBoundary>
       </div>
     </ThemeProvider>
   )

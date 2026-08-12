@@ -5279,5 +5279,1566 @@
       "overall": "",
       "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01kz6fva32edgb8vxntrfth32j` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6049, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
+  },
+  {
+    "challengeId": "20-error-boundaries",
+    "challengeName": "Error Boundaries and Error Handling",
+    "timestamp": "2026-08-12T04:04:37.915Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 83.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should render children when no error",
+              "status": "passed",
+              "title": "ErrorBoundary should render children when no error",
+              "duration": 52,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
+              "status": "passed",
+              "title": "ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
+              "duration": 47,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have Retry button with id=\"error-retry\"",
+              "status": "passed",
+              "title": "ErrorBoundary should have Retry button with id=\"error-retry\"",
+              "duration": 10,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling Retry button should be clickable",
+              "status": "passed",
+              "title": "Retry button should be clickable",
+              "duration": 137,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786507484691,
+          "endTime": 1786507484937,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-20.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\ErrorBoundary.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskApp.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\hooks\\useLocalStorage.ts",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/ErrorBoundary.tsx",
+          "patternsFound": [],
+          "patternsMissing": [
+            "functionalComponent"
+          ]
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/hooks/useLocalStorage.ts",
+          "patternsFound": [],
+          "patternsMissing": [
+            "functionalComponent"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "totalTests": 1,
+      "passedTests": 0,
+      "failedTests": 1,
+      "details": [
+        {
+          "title": "challenge-20.spec.ts",
+          "file": "challenge-20.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 20: Error Boundaries - E2E",
+              "file": "challenge-20.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list or main content",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 1815,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37",
+                            "location": {
+                              "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                              "column": 37,
+                              "line": 11
+                            },
+                            "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m taskList \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#task-list'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m main \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'main'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskList\u001b[33m.\u001b[39mor(main))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                                "column": 37,
+                                "line": 11
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T04:04:58.915Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                            "column": 37,
+                            "line": 11
+                          }
+                        },
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 2950,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37",
+                            "location": {
+                              "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                              "column": 37,
+                              "line": 11
+                            },
+                            "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m taskList \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#task-list'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m main \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'main'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskList\u001b[33m.\u001b[39mor(main))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                                "column": 37,
+                                "line": 11
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-08-12T04:05:35.631Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                            "column": 37,
+                            "line": 11
+                          }
+                        },
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 3430,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37",
+                            "location": {
+                              "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                              "column": 37,
+                              "line": 11
+                            },
+                            "snippet": "\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m taskList \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#task-list'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m main \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'main'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m expect(taskList\u001b[33m.\u001b[39mor(main))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                                "column": 37,
+                                "line": 11
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#task-list').or(locator('main'))\nExpected: visible\nError: strict mode violation: locator('#task-list').or(locator('main')) resolved to 2 elements:\n    1) <main>…</main> aka getByRole('main')\n    2) <section id=\"task-list\">…</section> aka getByText('First TaskDescription onePriority: HighCategory: GeneralEditDeleteSecond')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#task-list').or(locator('main'))\u001b[22m\n\n\n   9 |     const taskList = page.locator('#task-list');\n  10 |     const main = page.locator('main');\n> 11 |     await expect(taskList.or(main)).toBeVisible();\n     |                                     ^\n  12 |   });\n  13 | });\n  14 |\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts:11:37"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 2,
+                          "startTime": "2026-08-12T04:05:43.996Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry2\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-20-Challenge-20--06b6f-y-task-list-or-main-content-chromium-retry2\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-20.spec.ts",
+                            "column": 37,
+                            "line": 11
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1d641d769955c6bc30c0-ac7bb770a40f47a29acf",
+                  "file": "challenge-20.spec.ts",
+                  "line": 8,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-20.spec.ts\" --reporter=json",
+      "passed": false
+    },
+    "aiReviewResults": {
+      "challengeId": "20-error-boundaries",
+      "timestamp": "2026-08-12T04:06:11.771Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and React hooks is well-implemented.",
+        "The code includes error handling and fallback UI for rendering errors."
+      ],
+      "improvements": [
+        "Some of the function names could be more descriptive, such as `withDefaults` and `loadPersistedTasks`.",
+        "Consider adding JSDoc comments to explain the purpose of each function and component.",
+        "The `useLocalStorage` hook could be improved by adding a `try`-`catch` block to handle potential errors when parsing or stringifying the stored value."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-organized and follows best practices for React and TypeScript development. However, there are some minor improvements that could be made to enhance readability and maintainability."
+    },
+    "aiResults": {
+      "challengeId": "20-error-boundaries",
+      "timestamp": "2026-08-12T04:06:11.771Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and React hooks is well-implemented.",
+        "The code includes error handling and fallback UI for rendering errors."
+      ],
+      "improvements": [
+        "Some of the function names could be more descriptive, such as `withDefaults` and `loadPersistedTasks`.",
+        "Consider adding JSDoc comments to explain the purpose of each function and component.",
+        "The `useLocalStorage` hook could be improved by adding a `try`-`catch` block to handle potential errors when parsing or stringifying the stored value."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-organized and follows best practices for React and TypeScript development. However, there are some minor improvements that could be made to enhance readability and maintainability."
+    }
+  },
+  {
+    "challengeId": "21-react-router",
+    "challengeName": "React Router - Routing and Navigation",
+    "timestamp": "2026-08-12T04:55:41.851Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 0
+    },
+    "totalScore": 85,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should use useParams and render task detail or not found",
+              "status": "passed",
+              "title": "TaskDetailPage should use useParams and render task detail or not found",
+              "duration": 15,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should have back button with id task-detail-back",
+              "status": "passed",
+              "title": "TaskDetailPage should have back button with id task-detail-back",
+              "duration": 2,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786510545592,
+          "endTime": 1786510545609,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-21.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\App.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskApp.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskCard.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskDetailPage.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskList.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "props"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/TaskDetailPage.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "props"
+          ]
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "props"
+          ]
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskList.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskCard.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-21.spec.ts",
+          "file": "challenge-21.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 21: React Router - E2E",
+              "file": "challenge-21.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5130,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T04:55:58.637Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "22625d08e539c53447bc-d4276de94028c4486994",
+                  "file": "challenge-21.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "task detail route should be reachable",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 939,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T04:56:04.687Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "22625d08e539c53447bc-0603557c1a6fa646b519",
+                  "file": "challenge-21.spec.ts",
+                  "line": 12,
+                  "column": 3
+                },
+                {
+                  "title": "back button should exist on task detail page",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 15463,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T04:56:05.636Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "22625d08e539c53447bc-f85ca2164f7d61a1e83d",
+                  "file": "challenge-21.spec.ts",
+                  "line": 17,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "21-react-router",
+      "timestamp": "2026-08-12T04:56:26.682Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01kz6fva32edgb8vxntrfth32j` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6567, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    },
+    "aiResults": {
+      "challengeId": "21-react-router",
+      "timestamp": "2026-08-12T04:56:26.682Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01kz6fva32edgb8vxntrfth32j` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6567, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "22-data-fetching",
+    "challengeName": "Data Fetching - Loading and Error State",
+    "timestamp": "2026-08-12T05:04:56.414Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show loading state initially or fetch from API",
+              "status": "passed",
+              "title": "FetchDemoView should show loading state initially or fetch from API",
+              "duration": 24,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should have fetch-list when data is loaded",
+              "status": "passed",
+              "title": "FetchDemoView should have fetch-list when data is loaded",
+              "duration": 14,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show fetch-error when fetch fails",
+              "status": "passed",
+              "title": "FetchDemoView should show fetch-error when fetch fails",
+              "duration": 17,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786511100052,
+          "endTime": 1786511100107,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-22.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\App.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\FetchDemoView.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/FetchDemoView.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-22.spec.ts",
+          "file": "challenge-22.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 22: Data Fetching - E2E",
+              "file": "challenge-22.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should show loading or list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1792,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T05:05:12.900Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "897c0b09f5b8225a79bd-7bc66a1771cb4c50b87e",
+                  "file": "challenge-22.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "should eventually show fetch-list when API succeeds",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 390,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T05:05:15.594Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "897c0b09f5b8225a79bd-874b54bff2542e762bf2",
+                  "file": "challenge-22.spec.ts",
+                  "line": 19,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "22-data-fetching",
+      "timestamp": "2026-08-12T05:05:17.959Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between the API request and the UI rendering.",
+        "The use of TypeScript and functional components is a good practice, making the code more maintainable and scalable.",
+        "The code is well-commented and follows a consistent naming convention, making it easier to understand and modify."
+      ],
+      "improvements": [
+        "The `fetch` function is not properly handled in case of network errors. Consider adding a retry mechanism or a timeout to handle such scenarios.",
+        "The `cancelled` flag is not necessary in this implementation, as the `AbortController` is not used. Consider removing it to simplify the code.",
+        "The error handling could be improved by providing more specific error messages or logging the error for debugging purposes."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good separation of concerns between the API request and the UI rendering. However, there are some areas for improvement, such as handling network errors and simplifying the code by removing unnecessary flags."
+    },
+    "aiResults": {
+      "challengeId": "22-data-fetching",
+      "timestamp": "2026-08-12T05:05:17.959Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between the API request and the UI rendering.",
+        "The use of TypeScript and functional components is a good practice, making the code more maintainable and scalable.",
+        "The code is well-commented and follows a consistent naming convention, making it easier to understand and modify."
+      ],
+      "improvements": [
+        "The `fetch` function is not properly handled in case of network errors. Consider adding a retry mechanism or a timeout to handle such scenarios.",
+        "The `cancelled` flag is not necessary in this implementation, as the `AbortController` is not used. Consider removing it to simplify the code.",
+        "The error handling could be improved by providing more specific error messages or logging the error for debugging purposes."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good separation of concerns between the API request and the UI rendering. However, there are some areas for improvement, such as handling network errors and simplifying the code by removing unnecessary flags."
+    }
+  },
+  {
+    "challengeId": "23-useref-focus-management",
+    "challengeName": "useRef - Focus Management",
+    "timestamp": "2026-08-12T05:11:50.737Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 66.7,
+      "aiReview": 88
+    },
+    "totalScore": 93.205,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 23: useRef - Focus Management"
+              ],
+              "fullName": " Challenge 23: useRef - Focus Management FilterBar should render search input with id search-input",
+              "status": "passed",
+              "title": "FilterBar should render search input with id search-input",
+              "duration": 23,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 23: useRef - Focus Management"
+              ],
+              "fullName": " Challenge 23: useRef - Focus Management FilterBar should be focusable for search input",
+              "status": "passed",
+              "title": "FilterBar should be focusable for search input",
+              "duration": 2,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1786511515311,
+          "endTime": 1786511515336,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/MOHAMMED.SIDDIQUE/OneDrive/Desktop/React Challenges/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\App.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\FilterBar.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\src\\components\\TaskApp.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "props",
+        "useRef"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/components/FilterBar.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props",
+            "useRef"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/components/TaskApp.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "props"
+          ],
+          "patternsMissing": [
+            "useRef"
+          ]
+        },
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "props",
+            "useRef"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 66.7,
+      "totalTests": 3,
+      "passedTests": 2,
+      "failedTests": 1,
+      "details": [
+        {
+          "title": "challenge-23.spec.ts",
+          "file": "challenge-23.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 23: useRef - Focus Management - E2E",
+              "file": "challenge-23.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2905,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T05:12:06.660Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a7b5313722e1686b4d4f-dcb101d3a94b1b8146ea",
+                  "file": "challenge-23.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "should display filter bar with search input",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 413,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:13:81",
+                            "location": {
+                              "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                              "column": 81,
+                              "line": 13
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                                "column": 81,
+                                "line": 13
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:13:81"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T05:12:10.466Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                            "column": 81,
+                            "line": 13
+                          }
+                        },
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 774,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:13:81",
+                            "location": {
+                              "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                              "column": 81,
+                              "line": 13
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                                "column": 81,
+                                "line": 13
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:13:81"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-08-12T05:12:19.414Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                            "column": 81,
+                            "line": 13
+                          }
+                        },
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 902,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:13:81",
+                            "location": {
+                              "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                              "column": 81,
+                              "line": 13
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m   test(\u001b[32m'should display filter bar with search input'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#filter-bar'\u001b[39m)\u001b[33m.\u001b[39mor(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#search-input'\u001b[39m)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   test(\u001b[32m'search input should exist and be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                                "column": 81,
+                                "line": 13
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#filter-bar').or(locator('#search-input'))\nExpected: visible\nError: strict mode violation: locator('#filter-bar').or(locator('#search-input')) resolved to 2 elements:\n    1) <div id=\"filter-bar\">…</div> aka getByText('AllActiveCompletedRecently')\n    2) <input value=\"\" type=\"text\" id=\"search-input\"/> aka locator('#search-input')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#filter-bar').or(locator('#search-input'))\u001b[22m\n\n\n  11 |\n  12 |   test('should display filter bar with search input', async ({ page }) => {\n> 13 |     await expect(page.locator('#filter-bar').or(page.locator('#search-input'))).toBeVisible();\n     |                                                                                 ^\n  14 |   });\n  15 |\n  16 |   test('search input should exist and be visible', async ({ page }) => {\n    at C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts:13:81"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 2,
+                          "startTime": "2026-08-12T05:12:36.138Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry2\\test-failed-1.png"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-23-Challenge-23--c0b29-ilter-bar-with-search-input-chromium-retry2\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\MOHAMMED.SIDDIQUE\\OneDrive\\Desktop\\React Challenges\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-23.spec.ts",
+                            "column": 81,
+                            "line": 13
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "a7b5313722e1686b4d4f-f646e519e463d837ae26",
+                  "file": "challenge-23.spec.ts",
+                  "line": 12,
+                  "column": 3
+                },
+                {
+                  "title": "search input should exist and be visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 784,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-12T05:12:39.611Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a7b5313722e1686b4d4f-c9ca256cafd0528cd2b6",
+                  "file": "challenge-23.spec.ts",
+                  "line": 16,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-23.spec.ts\" --reporter=json",
+      "passed": false
+    },
+    "aiReviewResults": {
+      "challengeId": "23-useref-focus-management",
+      "timestamp": "2026-08-12T05:12:42.063Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear and concise variable names and function signatures.",
+        "The use of TypeScript and React hooks is well-implemented, making the code more maintainable and efficient.",
+        "The code is well-organized, with each component and function having a clear and specific responsibility."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, especially in the `FilterBar` component where the `searchInputRef` is used without a clear explanation of its purpose.",
+        "The `useEffect` hook in the `FilterBar` component is not necessary, as the `searchInputRef` is already initialized in the component's state. This can be removed to simplify the code.",
+        "The `debouncedSearchText` state in the `TaskApp` component could be replaced with a more efficient solution, such as using a library like `lodash.debounce` to debounce the search input."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and efficiency. However, there are a few areas that could be improved to make the code even more robust and efficient."
+    },
+    "aiResults": {
+      "challengeId": "23-useref-focus-management",
+      "timestamp": "2026-08-12T05:12:42.063Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear and concise variable names and function signatures.",
+        "The use of TypeScript and React hooks is well-implemented, making the code more maintainable and efficient.",
+        "The code is well-organized, with each component and function having a clear and specific responsibility."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, especially in the `FilterBar` component where the `searchInputRef` is used without a clear explanation of its purpose.",
+        "The `useEffect` hook in the `FilterBar` component is not necessary, as the `searchInputRef` is already initialized in the component's state. This can be removed to simplify the code.",
+        "The `debouncedSearchText` state in the `TaskApp` component could be replaced with a more efficient solution, such as using a library like `lodash.debounce` to debounce the search input."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and efficiency. However, there are a few areas that could be improved to make the code even more robust and efficient."
+    }
   }
 ]

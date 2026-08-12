@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button from './Button'
 import Badge from './Badge'
 import StatusIndicator from './StatusIndicator'
@@ -20,6 +21,7 @@ interface TaskCardProps {
   onEditStart?: (id: string | number) => void
   onEditCancel?: () => void
   onUpdateTask?: (id: string | number, updates: { title: string; description: string; priority: string }) => void
+  linkToTaskDetail?: boolean
 }
 
 function getDueDateStatus(dueDate: string | undefined, completed: boolean) {
@@ -54,6 +56,7 @@ function TaskCard({
   onEditStart,
   onEditCancel,
   onUpdateTask,
+  linkToTaskDetail,
 }: TaskCardProps) {
   const resolvedId = taskId ?? id
 
@@ -142,7 +145,11 @@ function TaskCard({
         />
       )}
       <h2 style={completed ? { textDecoration: 'line-through' } : undefined}>
-        {title}
+        {linkToTaskDetail ? (
+          <Link to={`/challenge/21-react-router/task/${resolvedId}`}>{title}</Link>
+        ) : (
+          title
+        )}
       </h2>
       <p style={completed ? { textDecoration: 'line-through' } : undefined}>
         {description}

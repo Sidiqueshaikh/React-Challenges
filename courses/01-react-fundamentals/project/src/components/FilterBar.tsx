@@ -1,5 +1,6 @@
+import { useRef, useEffect } from 'react'
 import Button from './Button'
-import FormInput from './FormInput'
+
 
 type FilterValue = 'all' | 'active' | 'completed'
 type SortValue = 'recent' | 'priority-high' | 'priority-low' | 'alphabetical' | 'due-date'
@@ -30,6 +31,11 @@ export default function FilterBar({
   categories,
 }: FilterBarProps) {
   const filters: FilterValue[] = ['all', 'active', 'completed']
+  const searchInputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    searchInputRef.current?.focus()
+  }, [])
 
   return (
     <div id="filter-bar">
@@ -75,11 +81,12 @@ export default function FilterBar({
 
       {onSearchChange && (
         <>
-          <FormInput
+          <input
+            ref={searchInputRef}
             id="search-input"
+            type="text"
             value={searchText ?? ''}
             onChange={(e) => onSearchChange(e.target.value)}
-            type="text"
           />
           {searchText && searchText.length > 0 && (
             <Button id="clear-search" variant="secondary" onClick={() => onSearchChange('')}>

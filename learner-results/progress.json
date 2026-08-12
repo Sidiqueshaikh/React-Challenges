@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-08-11T14:59:20.676Z",
+  "lastUpdated": "2026-08-12T05:12:45.032Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 29.4,
-    "completionPercentage": 35.8,
+    "overallScore": 29.5,
+    "completionPercentage": 43.4,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 19
+    "completedChallenges": 23
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 89.2,
-      "completionPercentage": 82.6,
+      "averageScore": 89.3,
+      "completionPercentage": 100,
       "badgeLevel": "silver",
       "totalChallenges": 23,
-      "completedChallenges": 19,
+      "completedChallenges": 23,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -302,6 +302,66 @@
             "bestPractices": 100,
             "e2eTests": 100,
             "aiReview": 0
+          }
+        },
+        "20-error-boundaries": {
+          "challengeId": "20-error-boundaries",
+          "challengeName": "Error Boundaries and Error Handling",
+          "passed": true,
+          "score": 83.2,
+          "lastRun": "2026-08-12T04:04:37.915Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 88
+          }
+        },
+        "21-react-router": {
+          "challengeId": "21-react-router",
+          "challengeName": "React Router - Routing and Navigation",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-12T04:55:41.851Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "22-data-fetching": {
+          "challengeId": "22-data-fetching",
+          "challengeName": "Data Fetching - Loading and Error State",
+          "passed": true,
+          "score": 98.2,
+          "lastRun": "2026-08-12T05:04:56.414Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "23-useref-focus-management": {
+          "challengeId": "23-useref-focus-management",
+          "challengeName": "useRef - Focus Management",
+          "passed": true,
+          "score": 93.205,
+          "lastRun": "2026-08-12T05:11:50.737Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 66.7,
+            "aiReview": 88
           }
         }
       }
