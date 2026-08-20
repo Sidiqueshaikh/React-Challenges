@@ -1,4 +1,24 @@
-/** Stub: Complete Challenge 08 (Caching and Refetch) per README. */
+import { useGetPostsQuery } from '../api/apiSlice'
+
 export default function PostsList() {
-  return <div id="posts-list">Complete Challenge 08 per README.</div>
+  const { data, isLoading, error } = useGetPostsQuery()
+
+  if (isLoading) {
+    return <p data-testid="posts-loading">Loading...</p>
+  }
+
+  if (error) {
+    return <p data-testid="posts-error">Failed to load posts.</p>
+  }
+
+  return (
+    <ul data-testid="posts-list">
+      {data?.map((post) => (
+        <li key={post.id}>
+          <h3>{post.title}</h3>
+          <p>{post.body}</p>
+        </li>
+      ))}
+    </ul>
+  )
 }

@@ -1,7 +1,8 @@
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { parse } from '@babel/parser';
-import traverse from '@babel/traverse';
+import _traverse from '@babel/traverse';
+const traverse = _traverse.default || _traverse;
 
 /**
  * File-specific pattern rules
@@ -10,7 +11,7 @@ function getFileSpecificPatterns(file) {
   if (file.includes("api/usersApi")) {
     return ["createApi", "fetchBaseQuery", "endpoints"];
   }
-  if (file.includes("store")) {
+  if (file.endsWith("store/store.ts") || file.endsWith("store.ts")) {
     return ["reducer", "middleware"];
   }
   if (file.includes("UsersList")) {
@@ -21,7 +22,6 @@ function getFileSpecificPatterns(file) {
   }
   return [];
 }
-
 /**
  * Main checker
  */

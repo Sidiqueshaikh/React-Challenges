@@ -57,25 +57,25 @@ npm run review -- --challenge=01-store-setup
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 12/8/2026, 10:42:45 am*
+*Auto-updated when you run review. Last run: 20/8/2026, 10:44:43 am*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 0 / 13 (0%) |
-| Average score | 0% |
+| Challenges completed | 10 / 13 (76.9%) |
+| Average score | 84.5% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
-| Store Setup with configureStore | Redux, Redux Toolkit, configureStore, Provider | — |
-| First Slice with createSlice | Redux Toolkit, createSlice, reducers, actions | — |
-| Reading and Dispatching in Components | React-Redux, useSelector, useDispatch, typed hooks | — |
-| Multiple Slices in the Store | Redux, multiple reducers, slice per domain | — |
-| Async Logic with createAsyncThunk | Redux Toolkit, createAsyncThunk, extraReducers, pending/fulfilled/rejected | — |
-| RTK Query Setup and API Slice | RTK Query, createApi, fetchBaseQuery, API reducer and middleware | — |
-| Query Endpoints and useQuery Hooks | RTK Query, useGetUsersQuery, loading, error, data | — |
-| Caching and Cache Tags | RTK Query, providesTags, invalidatesTags, cache invalidation | — |
-| Mutations with useMutation | RTK Query, builder.mutation, useMutation, POST/PUT/DELETE | — |
-| Optimistic Updates | RTK Query, optimistic updates, onQueryStarted, rollback | — |
+| Store Setup with configureStore | Redux, Redux Toolkit, configureStore, Provider | Passed |
+| First Slice with createSlice | Redux Toolkit, createSlice, reducers, actions | Passed |
+| Reading and Dispatching in Components | React-Redux, useSelector, useDispatch, typed hooks | Passed |
+| Multiple Slices in the Store | Redux, multiple reducers, slice per domain | Passed |
+| Async Logic with createAsyncThunk | Redux Toolkit, createAsyncThunk, extraReducers, pending/fulfilled/rejected | Passed |
+| RTK Query Setup and API Slice | RTK Query, createApi, fetchBaseQuery, API reducer and middleware | Passed |
+| Query Endpoints and useQuery Hooks | RTK Query, useGetUsersQuery, loading, error, data | Passed |
+| Caching and Cache Tags | RTK Query, providesTags, invalidatesTags, cache invalidation | Passed |
+| Mutations with useMutation | RTK Query, builder.mutation, useMutation, POST/PUT/DELETE | Passed |
+| Optimistic Updates | RTK Query, optimistic updates, onQueryStarted, rollback | Passed |
 | API and Local State Together | Redux, RTK Query, slice + API in one store, filtering/sorting | — |
 | Error and Loading UX | RTK Query, loading state, error state, retry, UX | — |
 | Query with Parameters and Detail View | RTK Query, parameterized query, getPostById, useGetPostByIdQuery, skip option, detail view | — |

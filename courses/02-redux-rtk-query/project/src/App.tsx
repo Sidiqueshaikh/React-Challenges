@@ -1,3 +1,6 @@
+// TypeScript may not have declarations for CSS imports in this project setup.
+// Ignore the next line so the side-effect import doesn't cause a type error.
+// @ts-expect-error CSS imports have no type declarations in this setup
 import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ChallengeList from './components/ChallengeList'
