@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-20T05:14:45.634Z",
+  "lastUpdated": "2026-08-21T05:05:53.299Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
     "overallScore": 57.4,
-    "completionPercentage": 62.3,
+    "completionPercentage": 67.9,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 33
+    "completedChallenges": 36
   },
   "courses": {
     "01-react-fundamentals": {
@@ -369,11 +369,11 @@
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
       "courseName": "Redux & RTK Query",
-      "averageScore": 84.5,
-      "completionPercentage": 76.9,
+      "averageScore": 84.6,
+      "completionPercentage": 100,
       "badgeLevel": "silver",
       "totalChallenges": 13,
-      "completedChallenges": 10,
+      "completedChallenges": 13,
       "challenges": {
         "01-store-setup": {
           "challengeId": "01-store-setup",
@@ -516,6 +516,51 @@
           "passed": true,
           "score": 85,
           "lastRun": "2026-08-20T05:14:25.609Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "11-api-local-state": {
+          "challengeId": "11-api-local-state",
+          "challengeName": "API and Local State Together",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-21T04:49:30.757Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "12-error-loading-ux": {
+          "challengeId": "12-error-loading-ux",
+          "challengeName": "Error and Loading UX",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-21T04:59:00.142Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
+        "13-query-parameters": {
+          "challengeId": "13-query-parameters",
+          "challengeName": "Query with Parameters and Detail View",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-21T05:05:32.194Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
